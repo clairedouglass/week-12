@@ -1,79 +1,233 @@
 body {
     padding: 0;
     overflow: hidden;
-    font-family: helvetica, arial, sans-serif;
+    font-family: helvetica, georgia, sans-serif;
 }
 
-#time-window {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 1000;
-    background-color: white;
-    padding: 0px 10px 0px 10px;
+
+.topHeader {
+  color: white;
+  font-family: georgia;
+  font-weight: bold;
+  position: absolute;
+  left: 8px;
+  bottom: 2px;
 }
+
+.rentHeader {
+  color: white;
+  font-family: georgia;
+  font-size:18px;
+}
+
+.bottomHeader {
+  color: white;
+  font-size: 25px;
+  font-family: georgia;
+  padding-left: 5px;
+}
+
 
 .map {
     position: absolute;
     right: 0px;
-    left: 340px;
-    height: 100%;
-    top: 0;
+    left: 0px;
+    top: 50px;
+    bottom: 100px;
 }
 
 .sidebar {
     position: absolute;
-    left: 0px;
-    width: 340px;
-    top: 0;
-    bottom: 0;
-    overflow-y: auto;
-    padding: 20px;
-    padding-bottom: 60px;
+    left: 10px;
+    width: 250px;
+    top: 250px;
+    bottom: 140px;
+    padding: 15px;
+    padding-bottom: 20px;
+    background-color: black;
+    z-index: 1;
 }
 
-.item {
-    padding: 10px;
-    background-color: #eee;
+.boro {
+    position: absolute;
+    right: 30px;
+    top: 5px;
 }
 
-.item:not(:last-child) {
-    margin-bottom: 10px;
+#dropdownMenu1 {
+  background-color: white;
 }
 
-.item-heading {
-    font-size: 18px;
-    margin-top: 0;
-    font-weight: bold;
+
+.topBar {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   height: 50px;
+   background-color: black;
 }
 
-.sort {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 340px;
-    background-color: #fff;
-    padding: 20px;
+.bottomBar {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   height: 100px;
+   background-color: black;
 }
 
-.sort-option {
-    margin-left: 10px;
+.btn-circle {
+ border-radius: 50%;
 }
 
-.sort-option.selected {
-    border-bottom: 1px solid #ccc;
+#line1 {
+  background-color: #ef3e34;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
 }
 
-.sidebar nav.navbar-default {
-    border: 0;
-    border-radius: 0;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-    margin: -14px -20px 20px;
-    padding: 0 5px;
+#line2 {
+  background-color: #ef3e34;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
 }
 
-.navbar-brand {
-    font-size: 14px;
-    font-weight: bold;
+#line3 {
+  background-color: #ef3e34;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#line4 {
+  background-color: #4cba48;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#line5 {
+  background-color: #4cba48;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#line6 {
+  background-color: #4cba48;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#line7 {
+  background-color: #9167e0;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineA {
+  background-color: #2161d1;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineC {
+  background-color: #2161d1;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineE {
+  background-color: #2161d1;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineB {
+  background-color: #e59732;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineD {
+  background-color: #e59732;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineF {
+  background-color: #e59732;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineM {
+  background-color: #e59732;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineN {
+  background-color: #e8e243;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineQ {
+  background-color: #e8e243;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineR {
+  background-color: #e8e243;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineJ {
+  background-color: #96610c;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineZ {
+  background-color: #96610c;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineG {
+  background-color: #65d882;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#lineL {
+  background-color: #c6d1d3;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
 }
